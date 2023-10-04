@@ -1,0 +1,12 @@
+{
+    "genome": "hg38",
+    "tracks": [
+        {
+            "type": "alignment",
+            "name": "HG00103",
+            "url": "https://s3.amazonaws.com/1000genomes/data/HG00103/alignment/HG00103.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram",
+            "indexURL": "https://s3.amazonaws.com/1000genomes/data/HG00103/alignment/HG00103.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram.crai",
+            "format": "cram"
+        }
+    ]
+}
