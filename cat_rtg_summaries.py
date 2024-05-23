@@ -31,11 +31,11 @@ if __name__ == "__main__":
         if len(summaries) == 0: continue
 
         for summary in summaries:
-            sample_name = re.search('^([^\.]+)\..*$', summary).group(1)
+            sample_name = re.search(r'^([^\.]+)\..*$', summary).group(1)
             with open(f'{subdir}/{summary}',"r") as file:
                 data_rows = file.read().split("\n")[2:4]
                 for row in data_rows:
-                    parsed_row = re.split('\s+',row)
+                    parsed_row = re.split(r'\s+',row)
                     parsed_row[0] = sample_name
                     writer.writerow(parsed_row)
 
